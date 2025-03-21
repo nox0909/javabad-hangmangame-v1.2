@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman Game: FrontEnd Edition</title>
+        <link rel="stylesheet" href="styles3.css">
+        <script src="script.js" defer></script>
+    </head> 
+    <body>
+        <div class="game-modal">
+            <div class="content">
+                <img src="lost.gif" alt="gif">
+                <h4>Game Over!</h4>
+                <p>The correct word was: <b>style</b></p>
+                <button class="play-again">Play Again</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="leaderboard-container">
+                <h4>Leaderboard:</h4>
+                <ol id="leaderboard">
+                </ol>
+            </div>
+        </div>
+            <div class="container">
+                <div class="hangman-box">
+                    <div class="difficulty-select">
+                        <label for="difficulty">Select Difficulty:</label>
+                        <select id="difficulty-select">
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        <h4>Score: <span id="score">0</span></h4>
+                    </div>  
+                    <br>
+                    <br>
+                    <img src="hangman-0.svg" alt="hangman-img">
+                    <h1>JavaBad: <br> Hangman Game</h1>
+                </div>
+                <div class="game-box">
+                    <div class="code-input-container" style="display:none;">
+                        <label for="code-input">Type the code:</label>
+                        <input type="text" id="code-input" placeholder="Type here...">
+                        <button id="submit-code">Submit</button>
+                    </div>
+                    <ul class="word-display">
+                    </ul>
+                    <h4 class="hint-text">
+                        Hint:
+                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
+                    </h4>
+                    <h4 class="guesses-text">
+                        Incorrect Guesses:
+                        <b>0 / 6</b>
+                    </h4>
+                    <div class="keyboard">
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
